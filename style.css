@@ -1,0 +1,1385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@font-face {
+    font-family: reckless;
+    src: url(/RecklessCondensedS-TRIAL-Regular.otf);
+}
+
+@font-face {
+    font-family: midnight;
+    src: url(/midnight-sans-rd-12-semibold-trial.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100vw;
+    min-height: 100vh; 
+    font-family: "Roboto Mono", monospace;
+}
+
+
+.announcement p {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.announcement {
+    background-color: #2A2857;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 91%;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    background-color: #FFFEFB;
+    height: 20px;
+    display: flex;
+    width: 95%;
+    margin-top: 1rem;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 1px solid black;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    margin-left: 3%;
+}
+
+
+.hamburger img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.cart img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5%;
+    padding: 1rem;
+    height: 80vh;
+}
+
+.cart {
+    display: flex;
+    justify-content: end;
+}
+
+h1 {
+    font-family: reckless;
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+.page1bottomtext p {
+    font-family: "Figtree", sans-serif;
+    font-size: large;
+}
+
+.page1bottomtext button {
+     font-family: "Figtree", sans-serif;
+     border: none;
+     background-color: #2A2857;
+     color: white;
+     width: 100%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 10%;
+}
+
+.page1bottomtext {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.page1bottomtext button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.page2toptext {
+    text-align: center;
+    margin-top: 10%;
+    font-family: reckless;
+    font-size: 2rem;
+    font-weight: 40;
+}
+
+.bestsellers {
+    background-color: #DAAEEA;
+    width: fit-content;
+    font-size: large;
+    font-family: midnight;
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-top: 10%;
+    margin-bottom: 4rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.display {
+    background-color: #C1EE91;
+    height: 50vh;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+    position: relative;
+}
+
+.star {
+    width: 15%;
+    height: 35%;
+}
+
+.displaytop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+}   
+
+.rating {
+    display: flex;
+    justify-content: end;
+    gap: 2%;    
+}
+
+.teasachets {
+    background-color: #FFFEFB;
+    font-family: midnight;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+
+}
+
+.rating {
+    font-size: 0.8rem;
+}
+
+.add {
+    text-align: right;
+    background-color: white;
+    border: 1px solid black;
+    width: fit-content;
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.add:hover {
+    background-color: #2A2857;
+    color: white;
+    
+}
+
+.info h3 {
+    font-family: reckless;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: 0.8rem;
+    margin-bottom: 3%;
+    word-spacing: -4px;
+}
+
+.card {
+    width: 65vw;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.teas {
+    display: flex;
+    overflow-x: scroll;
+    gap: 5%;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.display2 {
+    background-color: #FFD884;
+}
+
+.display3 {
+    background-color: #B0E8C1;
+}
+
+.display4 {
+    background-color: #C1E4F8;
+}
+
+.display5 {
+    background-color: #C0E571;
+}
+
+.display6 {
+    background-color: #FFCB96;
+}
+
+.display7 {
+    background-color: #FFD1B8;
+}
+
+.display8 {
+    background-color: #CCE3FF;    
+}
+
+.display9 {
+    background-color: #AEE0F9;
+}
+
+.explore-btn {
+    background-color: #2A2857;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: 5rem;
+    margin-bottom:5rem;
+    padding: 20px;
+    width: 15rem;
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.explore-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.explorediv {
+    display: flex;
+    justify-content: center;
+}
+
+.discover {
+    background-color:#C1632A;
+    width: fit-content;
+    font-size: 2.5rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    font-weight: 700;
+    font-family: midnight;
+}
+
+.page3 h4 {
+    font-family: reckless;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.page3data {
+    margin-left: 5%;
+}
+
+.page3 input {
+    height: 10vh;
+    width: 90%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    text-indent: 10%;
+    font-size: 2rem;
+    font-family: reckless;
+    font-weight: 100;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.page3 {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 5%; */
+    margin-bottom: 15%;
+}
+
+
+.vibe {
+    background-color:#CCE3FF;
+    min-width: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2rem;
+    font-family: reckless;
+    font-weight: 100;
+    border: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.vibe:hover {
+    background-color: #A2C9FC;
+    cursor: pointer;
+}
+
+.vibes {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.page4 {
+    position: relative;
+    min-height: fit-content;
+    margin-bottom: 20%;
+}
+
+.page4background {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+
+.ourorigins {
+    background-color: #7dbbda;
+    width: fit-content;
+    font-size: 2.5rem;
+    font-family: midnight;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.ouroriginscover {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+}
+
+.borntext {
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    font-family: midnight;
+}
+
+.foundertext p {
+    color: white;
+    font-family: reckless;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+.ourstory button {
+    background-color: white;
+    border: 1px solid black;
+    width: 90%;
+     padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin-bottom: 15%;
+}
+
+.ourstory button:hover {
+    background-color: #2A2857;
+    color: white;
+    cursor: pointer;
+}
+
+.ourstory {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+}
+
+.fromfarmimg{
+    position: absolute;
+    top: -250px;
+}
+
+.reviews {
+    background-color: #73BC25;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: midnight;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    width: fit-content;
+}
+
+.reviewcard {
+    background-color: #F5AF8A;
+    width: 70vw;
+    height: 28em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 5%;
+    flex-shrink: 0;
+}
+
+.reviewscards {
+    margin-bottom: 20%;
+    display: flex;
+    gap: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    overflow-x:scroll;
+    overscroll-behavior-x: auto;
+    width: 100%;
+}
+
+.reviewtop {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: reckless;
+    font-size: 1.3rem;
+    font-weight: 100;
+    gap: 3%;
+}
+
+.reviewtop p {
+    font-size: 0.9rem;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -1px;
+    font-weight: 300;
+}
+
+.reviewcard2 {
+    background-color: #ABDF74;
+}
+
+.reviewcard3 {
+    background-color: #FFD265;
+}
+
+.reviewcard4 {
+    background-color: #ADE674; 
+}
+
+.reviewcard5 {
+    background-color: #D9C2E1;
+}
+.bottomcard {
+    display: flex;
+    background-color: #EA6D44;
+    padding: 7%;
+    border: 1px solid black;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.bottomcardimg {
+    border-right: 1px solid black;
+    height: 100%;
+}
+
+.bottomcard p {
+    color: white;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.bottomcard button {
+    background-color: white;
+    border: 1px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.darkbluebackground {
+    background-color: #2A2857;
+    color: white;
+    text-align: center;
+    padding-bottom: 15%;
+}
+
+.darkbluebackground h3 {
+    font-size: 3rem;
+    font-family: reckless;
+    font-weight: 300;
+    margin-top: -1%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.darkbluebackground p {
+    font-size: 1.1rem;
+    word-spacing: -5px;
+    margin-bottom: 7%;
+}
+
+.darkbluebackground button {
+    width: 70%;
+    height: 7vh;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.learnmorebtn:hover {
+    background-color: #2A2857;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.ourlattestag {
+    background-color:#FFCB96;
+    width: fit-content;
+    padding: 1%;
+    font-family: midnight;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.ourlattestagcover {
+    display: flex;
+    justify-content: center;
+}
+
+.ourlattes {
+    background-color: #9F6429;
+    padding-top: 20%;
+    text-align: center;
+    margin-bottom: 15%;
+    
+}
+
+.ourlattes h3 {
+    color: white;
+    font-size: 4rem;
+    font-family: midnight;
+    text-transform: uppercase;
+}
+
+.notraining {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-bottom: 10%;
+}
+
+.lattecard {
+    background-color: #FFCB96;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+    z-index: 1;
+}
+
+.lattecards {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    gap: 5%;
+    padding-bottom: 20%;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-right: 5%;
+}
+
+.nice {
+    background-color: #F09F54;
+    width: fit-content;
+    padding: 1%;
+    font-family: midnight;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.lattecard h3 {
+    font-family: reckless;
+    color: black;
+    font-size: 2.7rem;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.lattecard p {
+    word-spacing: -5px;
+}
+
+.lattecard img {
+   justify-self: left;
+}
+
+
+.lattecard button {
+    background-color: white;
+    border: 1px solid black;
+    width: 50%;
+    padding-top: 3%;
+    border-radius: 30px;
+    padding-bottom: 3%;
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+
+.lattecard button:hover {
+    background-color: #2A2857;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.page7 {
+    margin-bottom: 20%;
+}
+
+.page7 h4 {
+    background-color: #f7a75d;
+    width: fit-content;
+    padding: 1%;
+    font-family: midnight;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.recipe {
+    background-color: white;
+    width: fit-content;
+    padding: 1%;
+    font-family: midnight;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+.journalbelowtext {
+    font-family: reckless;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.topteajournal {
+    background-color: #2A2857;
+    height: 85%;
+}
+
+.bottomteajournal {
+    background-color:#A2C9FC;
+    height: 15%;
+}
+
+.teajournal {
+    height: 50vh;
+    display: flex;
+    gap: 5%;
+    overflow-x: scroll;
+    margin-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.teajournalcard {
+    width: 70%;
+    height: 100%;
+    flex-shrink: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+.teajournalbtn {
+    background-color: #2A2857;
+    color: white;
+    width: 60%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+}
+
+.teajournalbtn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.teajournalbtncover {
+    display: flex;
+    justify-content: center;
+}
+
+.page8 img {
+    width: 100%;
+    border-top: 1px solid black;
+    height: 70vh;
+}
+
+.great {
+    background-color: #df6620;
+    color: white;
+    text-align: center;
+}
+
+.great h3 {
+    font-family: reckless;
+    font-size: 2.5rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-weight: 100;
+}
+
+.great p {
+    word-spacing: -5px;
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+}
+
+.great button {
+    width: 80%;
+    background-color: white;
+    border: 1px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 15%;
+}
+
+.great button:hover {
+    background-color: #2A2857;
+    color: white;
+    cursor: pointer;
+}
+
+.page9 {
+    background-color: #C0DBFF;
+    padding-left: 5%;
+    height: fit-content;
+}
+
+.page9 h4 {
+    font-family: midnight;
+    font-size: 2rem;
+    font-weight: 100;
+    padding-top: 10%;
+    padding-bottom: 6%;
+}
+
+.page9 p {
+    font-family: reckless;
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding-bottom: 5%;
+}
+
+.page9 input {
+    width: 95%;
+    height: 7vh;
+    font-size: 1.2rem;
+    text-indent: 20px;
+    font-weight: 100;
+    color: gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.page9 button {
+    width: 95%;
+    background-color: #2A2857;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    
+}
+
+.page9 button:hover {
+    background-color: #FFB500;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.page9 img {
+    width: 60%;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.roundimgcover {
+    border: 1px solid black;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.roundimgcover:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.page6 img {
+    width: 100%;
+}
+
+.dropdowns p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(180, 177, 177);
+    word-spacing: -5px;
+    letter-spacing: -1px;
+}
+
+summary {
+    font-family: reckless;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 6%;
+    list-style: none;
+    font-weight: 100;
+}
+
+.dropdowns {
+    background-color: #2A2857;
+    padding: 5%;
+    width: 95%;
+    border-radius: 15px;
+}
+
+details {
+    border-bottom: 1px solid gray;
+    margin-bottom: 5%;
+}
+
+.noborder {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.lastpart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+    gap: 10rem;
+    height: 60vh;
+    position: relative;
+    width: 100%;
+}
+
+.lastpart p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8rem;
+    text-transform: uppercase;  
+    text-align: center;
+    font-weight: 500;
+
+}
+
+@media (max-width: 1024px) {
+    .nav-left {
+        display: none;
+    }
+    .logo-right {
+        display: none;
+    }
+    .reviewbottomtext{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none;
+
+    }
+
+    .nav-left {
+        display: flex;
+        gap: 2rem;
+        font-family: reckless;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    .logo-right {
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: 600;
+        gap: 1rem;
+    }
+
+    main {
+        align-items: baseline;
+
+    }
+
+    .page1bottomtext {
+        align-items: flex-start;
+        width: 50%;
+        text-align: left;
+        padding-left: 2rem;
+    }
+    .page1bottomtext h1 {
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    .page1bottomtext button {
+        width: 15rem;
+    }
+
+    .slashes {
+        display: none;
+    }
+    br {
+        display: none;
+    }
+    .page2toptext {
+        font-size: 3rem;
+    }
+    .page2starttext {
+         display: flex;
+        justify-content:center;
+    }
+    
+    .page2toptextcover {
+        width: 60vw;
+       
+    }
+
+    .bestsellers {
+        font-size: 3rem;
+    }
+
+    .bestsellerscover {
+        display: flex;
+        justify-content: center;
+    }
+
+    .teas {
+        height: fit-content;
+    }
+    
+    .card {
+        width: 20rem;
+        
+    }
+    .display {
+        height: 23rem;
+    }
+    .discover {
+        font-size: 4rem;
+    }
+    .page3data h4 {
+        font-size: 4rem;
+    }
+
+    .page3data p {
+        margin-bottom: 2rem;
+    }
+
+    .ourorigins {
+        font-size: 4rem;
+    }
+
+    .borntext h2 {
+        font-size: 9rem;
+    }
+
+    .foundertext p {
+        font-size: 4rem;
+    }
+
+    .ourstorycover {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 7rem;
+    }
+
+    .ourstory {
+        width: 13rem;
+        height: 5rem;
+    }
+
+    .reviews {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+   }
+   .reviewbottomtext p {
+    font-size: 3.5rem;
+    font-family: reckless;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+   }
+
+   .reviewcard {
+    width: 25vw;
+    padding: 1rem;
+   }
+
+   .imageandblue {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    background-color: #2A2857;
+   }
+
+   .imageandblueleft, .imageandblueright {
+    width: 50%;
+    height: 100%;
+   }
+   .darkbluebackground {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5rem;
+   }
+
+   .darkbluebackground h3 {
+    font-size: 5rem;
+    
+   }
+
+   .darkbluebackground button {
+    width: 15rem;
+   }
+
+   .ourlattestag {
+    font-size: 3rem;
+   }
+
+   .ourlattes h3 {
+    font-size: 5rem;
+   }
+   .lattecardsecondpart {
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2857;
+   }
+   .lattecard {
+    height: 60vh;
+    flex-direction: row;
+   }
+   .lattecards {
+    padding-bottom: 1.5rem;
+   }
+   .ourlattes {
+    padding-top: 4rem;
+   }
+
+   .page7 h4 {
+    font-size: 4rem;
+   }
+
+   .journalbelowtext {
+    font-size: 4rem;
+   }
+
+   .teajournalcard {
+    width: 30vw;
+   }
+   .teajournalbtn {
+    width: 20rem;
+    padding: 1rem;
+   }
+   .page7 {
+    margin-bottom: 4rem;
+   }
+   
+   .page8 {
+    position: relative;
+    z-index: -1;
+   }
+   .great {
+    width: 40vw;
+    height: 60vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    z-index: 1;
+    padding: 2rem;
+   }
+}
+
+@media (min-width: 1440px) {
+    .page2toptext {
+        font-size: 5rem;
+        margin-top: 1rem;
+    }
+    .teas {
+        gap: 1.5rem;
+    }
+
+    .page3data {
+        width: 60vw;
+        justify-content: center;
+        height: 80vh;
+    }
+
+    .page3datacover {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .discover {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .page3data h4 {
+        font-size: 4rem;
+    }
+
+    .page3data input {
+        width: 20vw;
+        height: 8vh;
+        margin-top: 2rem;
+    }
+
+    .vibes {
+        gap: 0.4rem;
+
+    }
+
+    .vibe {
+       font-size: 2rem;
+       padding: 0.5rem;
+       margin-bottom: 1rem;
+    }
+
+    .ourorigins {
+        font-size: 3rem;
+    }
+
+    .borntext h2 {
+        font-size: 10rem;
+    }
+
+    .reviews {
+        font-size: 3rem;
+        padding: 0 10px;    
+    }
+
+    .desktopmiddle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviewcard {
+        width: 15vw;
+        height: 50vh;
+    }
+
+    .reviewscards {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .imageandblue {
+        height: 90vh;
+    }
+
+    .notraining {
+        margin-bottom: 3rem;
+    }
+
+    .lattecard button {
+        width: 15rem;
+        margin-right: 3em;
+        height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ourlattes {
+        margin-bottom: 5rem;
+    }
+
+    .page7 h4 {
+        font-size: 3rem;
+        padding: 0.3rem;
+
+    }
+    .journalbelowtext {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+    }
+    .teajournal {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .teajournalcard {
+        width: 17vw;
+        height: 40vh;
+    }
+
+    .great {
+        height: 60vh;
+        width: 20vw;
+    }
+
+    .page8 {
+        border-bottom: 1px solid black;
+    }
+
+
+    .page9 h4 {
+        font-size: 2.5rem;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    .page9 p {
+        padding-bottom: 2rem;
+    }
+    .page9 input {
+        width: 20vw;
+
+    }
+
+    .page9 button {
+        width: 10vw;
+        height: 5vh;
+        padding: 0;
+    }
+
+    .dropdowns {
+        display: flex;
+        gap: 5rem;
+    }
+
+    details {
+        border-bottom: none;
+        
+    }
+
+    .lastpart {
+        height: fit-content;
+    }
+}
